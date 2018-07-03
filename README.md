@@ -33,17 +33,17 @@ Temperature data generator for mongo DB
 
 - if you are running mongo replica set; Probable error records
 
-    MongoError: not master
-    at Function.MongoError.create (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/error.js:31:11)
-    at /Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:497:72
-    at authenticateStragglers (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:443:16)
-    at Connection.messageHandler (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:477:5)
-    at Socket.<anonymous> (/Users/Omal/Desktop/digitalOcean Testing/mongo record generator/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:331:22)
-    at emitOne (events.js:116:13)
-    at Socket.emit (events.js:211:7)
-    at addChunk (_stream_readable.js:263:12)
-    at readableAddChunk (_stream_readable.js:250:11)
-    at Socket.Readable.push (_stream_readable.js:208:10)
+      MongoError: not master
+      at Function.MongoError.create (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/error.js:31:11)
+      at /Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:497:72
+      at authenticateStragglers (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:443:16)
+      at Connection.messageHandler (/Users/Omal/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js:477:5)
+      at Socket.<anonymous> (/Users/Omal/Desktop/digitalOcean Testing/mongo record generator/mongoRecordGenieTemperature/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:331:22)
+      at emitOne (events.js:116:13)
+      at Socket.emit (events.js:211:7)
+      at addChunk (_stream_readable.js:263:12)
+      at readableAddChunk (_stream_readable.js:250:11)
+      at Socket.Readable.push (_stream_readable.js:208:10)
 
 - Solution : check which is the primary & set the address of primary db to the variable 'url' in the app.
 
